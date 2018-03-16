@@ -1,0 +1,26 @@
+{
+    "name": "es6-string",
+    "displayName": "es6-string",
+    "description": "es6中模板字符串格式化",
+    "version": "0.0.1",
+    "publisher": "luyizhi",
+    "engines": {
+        "vscode": "^1.21.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "es6-string",
+            "aliases": ["es6-string"],
+            "extensions": [".js"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "es6-string",
+            "scopeName": "source.es6-string",
+            "path": "./syntaxes/es6-string.tmLanguage.json"
+        }]
+    }
+}
