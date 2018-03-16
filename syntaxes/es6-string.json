@@ -1,0 +1,26 @@
+{
+	"injectionSelector": "L:source.js -comment -string, L:source.jsx -comment -string,  L:source.js.jsx -comment -string, L:source.ts -comment -string, L:source.tsx -comment -string",
+	"injections": {
+		"L:source": {
+			"patterns": [
+				{
+					"match": "<",
+					"name": "invalid.illegal.bad-angle-bracket.html"
+				}
+			]
+		}
+	},
+	"name": "es6-string",
+	"patterns": [
+		{
+			"begin": "`",
+			"end": "`",
+			"patterns": [
+				{
+					"include": "text.html.basic"
+				}
+			]
+		}
+	],
+	"scopeName": "source.es6-string"
+}
